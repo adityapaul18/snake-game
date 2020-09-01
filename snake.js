@@ -106,6 +106,8 @@ function gameLoop() {
         pos.x += vel.x;
         pos.y += vel.y;
         randomFood();
+        score += 1;
+        document.getElementById('score').innerHTML = score;
     }
 
     if (vel.x || vel.y) {
