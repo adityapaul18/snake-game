@@ -2,6 +2,7 @@
 const BG_COLOUR = '#156455';
 const SNAKE_COLOUR = '#186483';
 const FOOD_COLOUR = '#164645';
+var score = 0;
 
 // Use the canvas
 const canvas = document.getElementById('canvas');
@@ -82,6 +83,8 @@ setInterval(() => {
     requestAnimationFrame(gameLoop);
 }, 1000 / FR);
 
+
+
 function gameLoop() {
     ctx.fillStyle = BG_COLOUR;
     ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -107,7 +110,7 @@ function gameLoop() {
         pos.y += vel.y;
         randomFood();
         score += 1;
-        document.getElementById('score').innerHTML = score;
+        document.getElementById('score').innerHTML = "Your score is : " + score;
     }
 
     if (vel.x || vel.y) {
