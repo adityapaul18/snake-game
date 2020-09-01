@@ -21,6 +21,7 @@ function init() {
 
     // Position of the snake in the start
     pos = { x: 10, y: 10 };
+    score = 0;
 
     // Slope of the snake
     vel = { x: 0, y: 0 };
