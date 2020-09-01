@@ -7,6 +7,7 @@ var score = 0;
 // Use the canvas
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
+var score = 0;
 
 canvas.width = 500;
 canvas.height = 500;
@@ -24,6 +25,8 @@ function init() {
 
     // Slope of the snake
     vel = { x: 0, y: 0 };
+    
+    
 
 
     snake = [
@@ -31,7 +34,7 @@ function init() {
         { x: 9, y: 10 },
         { x: 10, y: 10 },
     ]
-
+    score = 0;
     // Generate the random location of the food
     randomFood();
 }
