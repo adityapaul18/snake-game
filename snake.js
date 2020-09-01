@@ -1,11 +1,14 @@
-const BG_COLOUR = '#231f20';
-const SNAKE_COLOUR = '#c2c2c2';
-const FOOD_COLOUR = '#e66916';
+// Set the color of the background, snake and food
+const BG_COLOUR = '#156455';
+const SNAKE_COLOUR = '#186483';
+const FOOD_COLOUR = '#164645';
 
+// Use the canvas
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 
-canvas.width = canvas.height = 600;
+canvas.width = 500;
+canvas.height = 500;
 
 const FR = 10;
 const S = 20;
@@ -14,8 +17,13 @@ const T = canvas.width / S;
 let pos, vel, food, snake;
 
 function init() {
+
+    // Position of the snake in the start
     pos = { x: 10, y: 10 };
+
+    // Slope of the snake
     vel = { x: 0, y: 0 };
+
 
     snake = [
         { x: 8, y: 10 },
@@ -23,12 +31,15 @@ function init() {
         { x: 10, y: 10 },
     ]
 
+    // Generate the random location of the food
     randomFood();
 }
 
+// Initiate the game
 init();
 
 function randomFood() {
+    // Generate the food at a random location
     food = {
         x: Math.floor(Math.random() * T),
         y: Math.floor(Math.random() * T),
@@ -41,9 +52,11 @@ function randomFood() {
     }
 }
 
+// In case of any keypress of arrow keys
 document.addEventListener('keydown', keydown);
 
 function keydown(e) {
+    // Actions of the arrow keys
     switch (e.keyCode) {
         case 37:
             {
@@ -64,6 +77,7 @@ function keydown(e) {
     }
 }
 
+// Set the speed of the snake
 setInterval(() => {
     requestAnimationFrame(gameLoop);
 }, 1000 / FR);
