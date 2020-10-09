@@ -1,6 +1,6 @@
 # snake-game
-Its a snake game application built in JavaScript 
+It's a mini snake game application built in JavaScript 
 
-its a basic application that will give you good knowlege of object handling and functions in JavaScript
+It's a basic application with minimal controls that will give you a good knowledge of object handling and functions in JavaScript.
 
-Add new features to it and customize it to get a grip on js, fork the repo and upgrade
+Add some cool new features to it, customize it and get a grip on js, fork the repo and upgrade.

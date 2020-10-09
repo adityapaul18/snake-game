@@ -1,6 +1,6 @@
-const BG_COLOUR = '#231f20';
-const SNAKE_COLOUR = '#c2c2c2';
-const FOOD_COLOUR = '#e66916';
+const BG_COLOUR = '#0e0b0b';
+const SNAKE_COLOUR = '#5200cc';
+const FOOD_COLOUR = '#cccc00';
 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
