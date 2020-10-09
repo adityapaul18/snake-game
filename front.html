@@ -5,19 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .header{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        .center{
+            align-self: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div style="align-content: center;">
+    <div class="header">
         <h2> SNAKE GAME</h2>
     </div>
     
-    <ul style="list-style: none;">
-        <li>Feed the fruit to the snake and Dont let the snake bite itself</li><br>
-        <li>Don't press key opposite to the direction of snake</li><br>
-    </ul>
+        <p>
+           Feed the fruit to the snake and Dont let the snake bite itself<br><br>
+           Don't take a 180 degree turn i.e. don't press the opposite key as the snake is going in currently.<br><br>
+        </p>
+        <div class="center">
     <canvas id="canvas"></canvas>
     <script src="snake.js"></script>
+    </div>
 
 </body>
 
